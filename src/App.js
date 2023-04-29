@@ -2,22 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let post = '깅 올때까지 숨참음';
   return (
+    // JSX 언어
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="black-nav">
+        <h4 style={{color : 'red', fontSize : '16px'}}>블로그임</h4>
+      </div>
+      <h3>{post}</h3>
     </div>
   );
 }
